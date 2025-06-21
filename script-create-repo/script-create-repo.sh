@@ -4,7 +4,6 @@ org_name="${2}"
 token_gh="${3}"
 template="${4}"
 
-
 # create repo
 gh repo create ${org_name}/${repo_name} --public --template ${org_name}/${template} --include-all-branches 
 
@@ -44,7 +43,6 @@ curl -L \
             "require_code_owner_review": true,
             "require_last_push_approval": false,
             "required_review_thread_resolution": true,
-            "automatic_copilot_code_review_enabled": true,
             "allowed_merge_methods": [
             "merge"
             ]
